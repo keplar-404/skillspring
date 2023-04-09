@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* font-family: 'Merriweather', serif;
+font-family: 'Roboto', sans-serif; */
+
+/* Global css */
+.bg-global {
+    background-color: #14121E;
+}
+.global-titleFont{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
+
+/* hearder */
+.nav-bg{
+    background-color: black;
+    
+}
+.navBtn-bg{
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+    padding: 10px 22px;
+    border-radius: 2rem;
+}
