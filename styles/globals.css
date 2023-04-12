@@ -6,6 +6,11 @@
 /* font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
 
+:root{
+    background-color: #14121E;
+}
+
+
 /* Global css */
 .bg-global {
     background-color: #14121E;
@@ -14,19 +19,36 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Merriweather', serif;
     font-weight: bold;
 }
-
+.gb-font{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
 
 /* hearder */
 .nav-bg{
-    background-color: black;
-    
+    background-color: black;   
 }
 .navBtn-bg{
     background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
     padding: 10px 22px;
     border-radius: 2rem;
 }
-
 .navText:hover{
     color: #C3C3C3;
+}
+
+/* hero section */
+.title-color{
+    background: linear-gradient(124deg, #FFFFFF, #d3d3d3, #cacaca,#ffffff, #FFFFFF);
+    background-clip: text;
+    color: transparent;
+}
+.heroTxt-color{
+    background:  linear-gradient(90deg, #EAEAEA, rgba(255, 255, 255, 0.77));
+    background-clip: text;
+    color: transparent;
+}
+.flip{
+    -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
