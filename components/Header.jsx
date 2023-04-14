@@ -43,22 +43,22 @@ const Header = () => {
       <div
         className={`lg:hidden xl:hidden 2xl:hidden ${
           toggleMenu ? "sm:visible md:visible" : "sm:hidden md:hidden"
-        } absolute flex flex-col items-center pt-12 w-screen h-screen nav-bg text-white font-bold global-titleFont text-sm`}
+        } absolute z-[1000]  flex flex-col items-center pt-12 w-screen h-screen nav-bg text-white font-bold global-titleFont text-xs`}
       >
         {navBarItemsForMobile.map((data) => (
-          <NavBarText
-            key={data}
-            data={data}
-            setToggleMenu={setToggleMenu}
-          />
+          <NavBarText key={data} data={data} setToggleMenu={setToggleMenu} />
         ))}
       </div>
 
       {/* menu for other devices */}
-      <div className="text-white font-bold global-titleFont bg-global text-sm pt-[3vh] px-[8vw]">
-        <div className="grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
+      <div className="text-white font-bold global-titleFont bg-global text-[14px] pt-[3vh] px-[5vw]">
+        <div className="grid grid-cols-3">
           {/* left */}
-          <div className="flex items-center gap-x-[2vw] sm:col-span-0 md:col-span-0 lg:col-span-2 xl:col-span-2 2xl:col-span-2">
+          <div
+            className="flex items-center gap-x-[2vw] 
+            sm:col-span-1 md:col-span-1 lg:col-span-2 xl:col-span-2 2xl:col-span-2
+          "
+          >
             <div>
               <Link href="/">
                 <div className="flex gap-x-2 cursor-pointer">
@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           {/* right */}
-          <div className="sm:w-full md:w-full flex justify-end sm:gap-x-[5vw] md:gap-x-[5vw] lg:gap-x-[2vw] xl:gap-x-[2vw] 2xl:gap-x-[2vw]">
+          <div className="sm:col-span-2 md:col-span-2 lg:col-span-1 xl:col-span-1 2xl:col-span-1 sm:w-full md:w-full flex justify-end sm:gap-x-[4.5vw] md:gap-x-[5vw] lg:gap-x-[2vw] xl:gap-x-[2vw] 2xl:gap-x-[2vw]">
             <div className="flex justify-center items-center">
               <p className="cursor-pointer">Log in</p>
             </div>
@@ -100,6 +100,6 @@ const Header = () => {
       </div>
     </>
   );
-}
+};
 
 export default Header;
