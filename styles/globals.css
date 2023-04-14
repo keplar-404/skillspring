@@ -7,7 +7,7 @@
 font-family: 'Merriweather', serif;
 font-family: 'Roboto', sans-serif; */
 
-:root{
+:root {
     background-color: #14121E;
 }
 
@@ -16,47 +16,56 @@ font-family: 'Roboto', sans-serif; */
 .bg-global {
     background-color: #14121E;
 }
-.global-titleFont{
+
+.global-titleFont {
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
-.global-subTitleFont{
+
+.global-subTitleFont {
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
-.gb-font{
+
+.gb-font {
     font-family: 'Roboto', sans-serif;
     color: white;
 }
 
 /* hearder */
-.nav-bg{
-    background-color: black;   
+.nav-bg {
+    background-color: black;
 }
-.navBtn-bg{
+
+.navBtn-bg {
     background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
     padding: 10px 22px;
     border-radius: 2rem;
 }
-.navText:hover{
+
+.navText:hover {
     color: #C3C3C3;
 }
 
 /* hero section */
-.title-color{
-    background: linear-gradient(124deg, #FFFFFF, #d3d3d3, #7e7e7e,#ffffff, #c0c0c0);
+.title-color {
+    background: linear-gradient(124deg, #FFFFFF, #d3d3d3, #7e7e7e, #ffffff, #c0c0c0);
     background-clip: text;
     color: transparent;
 }
-.heroTxt-color{
-    /* background:  linear-gradient(90deg, #EAEAEA, rgba(255, 255, 255, 0.77));
-    background-clip: text;
-    color: transparent; */
+
+.heroTxt-color {
     color: #FFFFFF;
     opacity: 77%;
 }
-.flip{
+
+.flip {
     -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
+.heroBtn-bg {
+    background: linear-gradient(92.88deg, rgb(69, 94, 181) 9.16%, rgb(86, 67, 204) 43.89%, rgb(103, 63, 215) 64.72%);
+    padding: 9px 29px;
+    border-radius: 2rem;
+}
