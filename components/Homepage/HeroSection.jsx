@@ -1,4 +1,4 @@
-import L from "../public/L.svg";
+import L from "../../public/L.svg";
 
 function HeroSection() {
   return (
