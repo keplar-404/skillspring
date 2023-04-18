@@ -1,5 +1,7 @@
 import Appfeature from "@/components/Homepage/Appfeature";
 import HeroSection from "@/components/Homepage/HeroSection";
+import Studentfeedback from "@/components/Homepage/Studentfeedback";
+import Teachersection from "@/components/Homepage/Teachersection";
 import React from "react";
 
 export default function index() {
@@ -9,6 +11,8 @@ export default function index() {
       <div>
         <HeroSection />
         <Appfeature/>
+        <Teachersection/>
+        <Studentfeedback/>
       </div>
     </div>
   );

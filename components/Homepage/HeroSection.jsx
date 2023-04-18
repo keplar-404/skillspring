@@ -36,7 +36,7 @@ function HeroSection() {
               <img
                 src="./appBg.png"
                 alt="dkl"
-                className="absolute mt-[49vw] opacity-[28%]"
+                className="absolute mt-[49vw] opacity-[8%]"
               />
 
               <img

@@ -26,11 +26,16 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-weight: 400;
 }
+.global-subText {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+}
 
 .gb-font {
     font-family: 'Roboto', sans-serif;
-    color: white;
+    font-weight: 400;
 }
+
 
 /* hearder */
 .nav-bg {
@@ -73,3 +78,15 @@ font-family: 'Roboto', sans-serif; */
 /* home page feature section */
 
 
+/* Home page Teachersection */
+.teacherBg-custom {
+    background-image: url('../public/teacherdivbg.png');
+    background-size: cover;
+  }
+
+
+/* student feed back */
+.student-custom {
+    background-image: url('../public/studentReview/bg-glass.png');
+    background-size: cover;
+  }
