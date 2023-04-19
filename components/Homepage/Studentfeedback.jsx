@@ -3,7 +3,7 @@ import React from "react";
 function Studentfeedback() {
   return (
     <>
-      <div className="text-white sm:mt-[95rem] lg:mt-[48rem] 2xl:mt-[54rem]">
+      <div className="text-white sm:mt-[95rem] lg:mt-[48rem] 2xl:mt-[60rem]">
         {/* title section */}
         <div className="w-full text-center">
           <p className="global-titleFont sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">

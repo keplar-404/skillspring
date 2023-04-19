@@ -54,7 +54,7 @@ function Teachersection() {
   return (
     <>
       {/* title section */}
-      <div className="w-full overflow-hidden sm:mt-[35rem] lg:mt-[42rem] xl:mt-[54rem] 2xl:mt-[60rem]">
+      <div className="w-full overflow-hidden sm:mt-[45rem] lg:mt-[55rem] xl:mt-[54rem] 2xl:mt-[70rem]">
         <p className="text-center global-titleFont text-white sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
           Meet our top teacher's with top rated courses
         </p>

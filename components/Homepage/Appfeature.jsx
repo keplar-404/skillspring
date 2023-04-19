@@ -5,7 +5,7 @@ function Appfeature() {
   return (
     <>
       {/* text section */}
-      <div className="px-[9vw] global-titleFont sm:mt-[58vw] md:mt-[45vw] lg:mt-[45vw] xl:mt-[45vw] 2xl:mt-[45vw] ">
+      <div className="px-[9vw] global-titleFont sm:mt-[58vw] md:mt-[45vw] lg:mt-[45vw] xl:mt-[45vw] 2xl:mt-[50vw] ">
         <p className="text-center text-white sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
           What can this app give to enhanced your skill?
         </p>

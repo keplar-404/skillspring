@@ -21,6 +21,10 @@ font-family: 'Roboto', sans-serif; */
     font-family: 'Inter', sans-serif;
     font-weight: 500;
 }
+.global-titleFontBold {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
 
 .global-subTitleFont {
     font-family: 'Inter', sans-serif;
@@ -84,9 +88,3 @@ font-family: 'Roboto', sans-serif; */
     background-size: cover;
   }
 
-
-/* student feed back */
-.student-custom {
-    background-image: url('../public/studentReview/bg-glass.png');
-    background-size: cover;
-  }
