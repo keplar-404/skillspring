@@ -25,7 +25,6 @@ const Header = () => {
     "Features",
     "Certificate",
     "Company",
-    "Lunch app",
     "Download",
     "Close",
   ];
@@ -33,7 +32,6 @@ const Header = () => {
     "Features",
     "Certificate",
     "Company",
-    "Lunch app",
     "Download",
   ];
 
