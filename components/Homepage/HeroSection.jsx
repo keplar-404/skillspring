@@ -49,7 +49,7 @@ function HeroSection() {
         </section>
 
         <div className="absolute z-[100] w-full flex justify-center items-center">
-          <button className="heroBtn-bg cursor-pointer global-titleFont text-[17px] mt-[22vw]">
+          <button className="heroBtn-bg hover:drop-shadow-[0px_0px_15px_#455fb4e1] cursor-pointer global-titleFont text-[17px] mt-[22vw]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>Get start</p>
               <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />

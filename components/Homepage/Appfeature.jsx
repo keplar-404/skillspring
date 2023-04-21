@@ -74,7 +74,7 @@ mt-36 px-[5vw]"
       <div className="text-white absolute z-[10] w-full sm:mt-[27rem] md:mt-[22rem] lg:mt-[30rem] xl:mt-[37rem] 2xl:mt-[37rem]">
         {/* <p className="text-center text-xl global-titleFont">And many more</p> */}
         <div className="w-full flex justify-center items-center">
-          <button className="heroBtn-bg cursor-pointer global-titleFont text-[17px]">
+          <button className="heroBtn-bg cursor-pointer hover:drop-shadow-[0px_0px_15px_#455fb4e1] global-titleFont text-[17px]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>And many more</p>
               <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />

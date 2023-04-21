@@ -19,7 +19,7 @@ export default function index() {
           <p className="text-center global-titleFont text-white sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
             Let's upgrade your skill to the hole new level with SkillSpring
           </p>
-          <button className="text-white heroBtn-bg cursor-pointer global-titleFont text-[17px]">
+          <button className="z-[4] text-white heroBtn-bg hover:drop-shadow-[0px_0px_15px_#455fb4e1] cursor-pointer global-titleFont text-[17px]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>Download Now</p>
               <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />

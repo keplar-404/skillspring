@@ -49,8 +49,8 @@ const Header = () => {
       </div>
 
       {/* menu for other devices */}
-      <div className="text-white font-bold global-titleFont bg-global text-[14px] pt-[3vh] px-[5vw]">
-        <div className="grid grid-cols-3">
+      <div className="text-white font-bold global-titleFont text-[14px]  py-[4px] px-[5vw] glass">
+        <div className="grid grid-cols-3 mt-[8px]">
           {/* left */}
           <div
             className="flex items-center gap-x-[2vw] 
@@ -82,11 +82,11 @@ const Header = () => {
             <div className="flex justify-center items-center">
               <p className="cursor-pointer">Log in</p>
             </div>
-            <div className="navBtn-bg cursor-pointer">
-              <button>
+            
+              <button className="navBtn-bg cursor-pointer hover:drop-shadow-[0px_0px_15px_#455fb4e1]">
                 <p>Sign up</p>
               </button>
-            </div>
+            
             <div className="sm:visible md:visible lg:hidden xl:hidden 2xl:hidden flex flex-col justify-center items-center ">
               {/* mobile hambarger svg */}
               <button className="" onClick={() => setToggleMenu(true)}>
