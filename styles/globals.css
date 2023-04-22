@@ -85,13 +85,14 @@ font-family: 'Roboto', sans-serif; */
     border-radius: 2rem;
 }
 
-/* home page feature section */
-
 
 /* Home page Teachersection */
 .teacherBg-custom {
-    background-image: url('../public/teacherdivbg.png');
-    background-size: cover;
     backdrop-filter: blur(5px);
+  }
+
+  /* features page */
+  .customShape{
+    clip-path: ellipse(50% 40% at 50% 50%);
   }
 

@@ -4,6 +4,8 @@ import Partner from "@/components/Homepage/Partner";
 import Studentfeedback from "@/components/Homepage/Studentfeedback";
 import Teachersection from "@/components/Homepage/Teachersection";
 import React from "react";
+import Image from "next/image";
+import arrow from "../public/arrow.png"
 
 export default function index() {
   return (
@@ -22,7 +24,7 @@ export default function index() {
           <button className="z-[4] text-white heroBtn-bg hover:drop-shadow-[0px_0px_15px_#455fb4e1] cursor-pointer global-titleFont text-[17px]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>Download Now</p>
-              <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />
+              <Image src={arrow} alt="arrow" width={1} height={1} className="h-[15px] w-auto" quality={1} />
             </div>
           </button>
         </div>

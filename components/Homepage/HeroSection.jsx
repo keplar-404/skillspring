@@ -1,5 +1,7 @@
 import L from "../../public/L.svg";
 import Image from "next/image";
+import appPic2 from "../../public/appPic2.png";
+import arrow from "../../public/arrow.png"
 
 function HeroSection() {
   return (
@@ -34,19 +36,17 @@ function HeroSection() {
             </div>
 
             <div className="absolute w-full flex justify-center items-center">
-              {/* <img
-                src="./appBg.png"
-                alt="dkl"
-                className="absolute mt-[49vw] opacity-[8%]"
-              /> */}
-              
+              <div className="absolute mt-[49vw] h-[55vw] w-[75vw]  blur-[100px] opacity-[20%] bg-[#6C79FF]"></div>
 
-              {/* <img
-               
+              <Image
+                src={appPic2}
                 alt="skillspring"
-              
-              /> */}
-              <Image  src="/appPic2.png" width={800} height={800}  className="absolute h-[50vw] w-[68vw] mt-[49vw]"/>
+                width={2000}
+                height={2000}
+                className="absolute h-[50vw] w-[68vw] mt-[49vw]"
+                placeholder="blur"
+                priority={true}
+              />
             </div>
           </div>
         </section>
@@ -55,7 +55,7 @@ function HeroSection() {
           <button className="heroBtn-bg hover:drop-shadow-[0px_0px_15px_#455fb4e1] cursor-pointer global-titleFont text-[17px] mt-[22vw]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>Get start</p>
-              <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />
+              <Image src={arrow} alt="arrow" width={1} height={1} loading="lazy" className="h-[15px] w-auto" quality={1} />
             </div>
           </button>
         </div>
@@ -63,5 +63,4 @@ function HeroSection() {
     </>
   );
 }
-
 export default HeroSection;

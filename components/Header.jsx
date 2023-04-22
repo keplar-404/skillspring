@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Line from "../public/m.svg";
+import Image from "next/image";
+import logo from "../public/logo.png";
 
 const NavBarText = ({ data, setToggleMenu }) => {
   const handleClick = () => {
@@ -60,11 +62,7 @@ const Header = () => {
             <div>
               <Link href="/">
                 <div className="flex gap-x-2 cursor-pointer">
-                  <img
-                    src="./logo.png"
-                    alt="logo"
-                    className="w-auto h-4 my-auto"
-                  />
+                <Image src={logo} alt="logo" height={15} width={15} quality={50} className="w-auto h-4 my-auto"/>
                   <p>SkillSpring</p>
                 </div>
               </Link>
@@ -82,11 +80,11 @@ const Header = () => {
             <div className="flex justify-center items-center">
               <p className="cursor-pointer">Log in</p>
             </div>
-            
-              <button className="navBtn-bg cursor-pointer hover:drop-shadow-[0px_0px_15px_#455fb4e1]">
-                <p>Sign up</p>
-              </button>
-            
+
+            <button className="navBtn-bg cursor-pointer hover:drop-shadow-[0px_0px_15px_#455fb4e1]">
+              <p>Sign up</p>
+            </button>
+
             <div className="sm:visible md:visible lg:hidden xl:hidden 2xl:hidden flex flex-col justify-center items-center ">
               {/* mobile hambarger svg */}
               <button className="" onClick={() => setToggleMenu(true)}>

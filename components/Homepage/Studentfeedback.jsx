@@ -1,4 +1,9 @@
 import React from "react";
+import Image from "next/image";
+import one from "../../public/studentReview/1.png";
+import two from "../../public/studentReview/2.png";
+import three from "../../public/studentReview/3.png";
+import bgglass from "../../public/studentReview/bg-glass.png";
 
 function Studentfeedback() {
   return (
@@ -22,28 +27,31 @@ function Studentfeedback() {
           <div className="gb-font">
             <div className="flex justify-center items-center">
               {/* background color blur */}
-              <img
-                src="./studentReview/1-bg-blur-1.png"
-                alt="bg"
-                className="absolute z-[1] h-[20rem] w-[51rem] opacity-[4%]"
-              />
+
+              <div className="absolute z-[1] h-[5rem] w-[40vw] opacity-[11%] blur-[50px]  bg-[#BB87FC]"></div>
 
               {/* Glass & txt section */}
               <div className="flex justify-center items-center ">
                 {/* glass img */}
-                <img
-                  src="./studentReview/bg-glass.png"
+                <Image
+                  src={bgglass}
                   alt="glass"
-                  className=" sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem] "
+                  width={400}
+                  height={400}
+                  quality={30}
+                  className="z-[2] sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem]"
                 />
 
                 {/* text and profile pic section */}
-                <div className="flex sm:flex-col lg:flex-row sm:justify-center lg:justify-normal sm:items-center lg:items-start  gap-x-4 absolute z-[2] sm:w-[95vw] lg:w-[40rem]  sm:ml-[0vw] lg:ml-[1.5rem] ">
+                <div className="flex sm:flex-col lg:flex-row sm:justify-center lg:justify-normal sm:items-center lg:items-start  gap-x-4 absolute z-[3] sm:w-[95vw] lg:w-[40rem]  sm:ml-[0vw] lg:ml-[1.5rem] ">
                   <div>
                     {/* profile pic */}
-                    <img
-                      src="./studentReview/1.png"
+                    <Image
+                      src={one}
                       alt="1"
+                      width={50}
+                      height={50}
+                      quality={20}
                       className="sm:w-[60px] lg:w-[80px]  h-auto"
                     />
                   </div>
@@ -68,13 +76,9 @@ function Studentfeedback() {
             </div>
           </div>
 
-          {/* line pic */}
+          {/* line */}
           <div className="sm:hidden xl:block">
-            <img
-              src="./studentReview/line.png"
-              alt="line"
-              className="w-[37vw] sm:w-0 xl:w-[33vw]"
-            />
+            <div className="h-[1px] sm:w-0 xl:w-[33vw] opacity-[20%] bg-[#FFFFFF]"></div>
           </div>
         </div>
 
@@ -82,38 +86,36 @@ function Studentfeedback() {
         <div className="flex justify-center items-center gap-x-16 xl:gap-x-[5vw] mt-36">
           {/* line */}
           <div className="sm:hidden xl:block">
-            <img
-              src="./studentReview/line.png"
-              alt="line"
-              className="w-[37vw] sm:w-0 xl:w-[33vw]"
-            />
+            <div className="h-[1px] sm:w-0 xl:w-[33vw] opacity-[20%] bg-[#FFFFFF]"></div>
           </div>
 
           <div className="gb-font">
             <div className="flex justify-center items-center">
               {/* background color blur */}
-              <img
-                src="./studentReview/2-bg-blur.png"
-                alt="bg"
-                className="absolute z-[1] h-[20rem] w-[51rem] opacity-[2%]"
-              />
+              <div className="absolute z-[1] h-[5rem] w-[40vw] opacity-[7%] blur-[50px]  bg-[#FA6563]"></div>
 
               {/* Glass & txt section */}
               <div className="flex justify-center items-center ">
                 {/* glass */}
-                <img
-                  src="./studentReview/bg-glass.png"
+                <Image
+                  src={bgglass}
                   alt="glass"
-                  className=" sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem] "
+                  width={400}
+                  height={400}
+                  quality={30}
+                  className="z-[2] sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem]"
                 />
 
                 {/* text and profile pic section */}
                 <div className="flex sm:flex-col lg:flex-row sm:justify-center lg:justify-normal sm:items-center lg:items-start  gap-x-4 absolute z-[2] sm:w-[95vw] lg:w-[40rem]  sm:ml-[0vw] lg:-ml-[1.5rem] ">
                   {/* profile */}
                   <div className="sm:block lg:hidden">
-                    <img
-                      src="./studentReview/2.png"
-                      alt="2"
+                    <Image
+                      src={two}
+                      alt="1"
+                      width={50}
+                      height={50}
+                      quality={20}
                       className="sm:w-[60px] lg:w-[80px]  h-auto"
                     />
                   </div>
@@ -136,9 +138,12 @@ function Studentfeedback() {
 
                   {/* profjle pic for larger screeen */}
                   <div className="sm:hidden lg:block">
-                    <img
-                      src="./studentReview/2.png"
-                      alt="2"
+                    <Image
+                      src={two}
+                      alt="1"
+                      width={50}
+                      height={50}
+                      quality={20}
                       className="sm:w-[60px] lg:w-[80px]  h-auto"
                     />
                   </div>
@@ -153,25 +158,31 @@ function Studentfeedback() {
           <div className="gb-font">
             <div className="flex justify-center items-center">
               {/* background color blur */}
-              <img
-                src="./studentReview/3-bg-blur.png"
-                alt="bg"
-                className="absolute z-[1] h-[20rem] w-[51rem] opacity-[4%]"
-              />
+
+              <div className="absolute z-[1] h-[5rem] w-[40vw] opacity-[11%] blur-[50px]  bg-[#4CB782]"></div>
+
+              {/* Glass & txt section */}
               <div className="flex justify-center items-center ">
-                {/* glass */}
-                <img
-                  src="./studentReview/bg-glass.png"
+                {/* glass img */}
+                <Image
+                  src={bgglass}
                   alt="glass"
-                  className=" sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem] "
+                  width={400}
+                  height={400}
+                  quality={30}
+                  className="z-[2] sm:h-[12rem] lg:h-[8rem] sm:w-screen lg:w-[42rem]"
                 />
 
-                <div className="flex sm:flex-col lg:flex-row sm:justify-center lg:justify-normal sm:items-center lg:items-start  gap-x-4 absolute z-[2] sm:w-[95vw] lg:w-[40rem]  sm:ml-[0vw] lg:ml-[1.5rem] ">
-                  {/* profile pic */}
+                {/* text and profile pic section */}
+                <div className="flex sm:flex-col lg:flex-row sm:justify-center lg:justify-normal sm:items-center lg:items-start  gap-x-4 absolute z-[3] sm:w-[95vw] lg:w-[40rem]  sm:ml-[0vw] lg:ml-[1.5rem] ">
                   <div>
-                    <img
-                      src="./studentReview/3.png"
+                    {/* profile pic */}
+                    <Image
+                      src={three}
                       alt="1"
+                      width={50}
+                      height={50}
+                      quality={20}
                       className="sm:w-[60px] lg:w-[80px]  h-auto"
                     />
                   </div>
@@ -196,13 +207,9 @@ function Studentfeedback() {
             </div>
           </div>
 
-          {/* line pic */}
+          {/* line */}
           <div className="sm:hidden xl:block">
-            <img
-              src="./studentReview/line.png"
-              alt="line"
-              className="w-[37vw] sm:w-0 xl:w-[33vw]"
-            />
+            <div className="h-[1px] sm:w-0 xl:w-[33vw] opacity-[20%] bg-[#FFFFFF]"></div>
           </div>
         </div>
       </div>

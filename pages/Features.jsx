@@ -11,6 +11,8 @@ import Nine from "../public/features/9.svg";
 import Ten from "../public/features/10.svg";
 import Eleven from "../public/features/11.svg";
 import Twelve from "../public/features/12.svg";
+import Image from "next/image";
+import techdiv from "../public/teacherdivbg.png"
 
 function Features() {
   const features = [
@@ -82,13 +84,18 @@ function Features() {
     return (
       <>
         <div className="relative flex flex-col gap-y-[3rem] justify-center items-center w-[17rem] h-[17rem]">
-          <img
-            src="./features/glass.png"
-            alt="glass"
-            className="absolute w-[17rem] h-[17rem]"
-          />
+           <Image
+          src={techdiv}
+          alt="glass"
+          width={200}
+          height={200}
+          quality={50}
+          className="absolute z-[7] w-[17rem] h-[17rem]"
+        />
+        <div className="z-[3]">
           {svg}
-          <div className="w-full px-10">
+        </div>
+          <div className="w-full px-10 z-[9]">
             <p className="global-titleFontBold ">{title}</p>
             <p className="gb-font mt-2 text-[#989898] leading-5">{txt}</p>
           </div>
@@ -103,7 +110,7 @@ function Features() {
       <div className="text-white">
         {/* title section */}
         <div className="w-full flex justify-center items-center relative sm:mt-[8rem] lg:mt-[12rem]  xl:mt-[15vw]">
-          <div className="absolute z-[3]">
+          <div className="absolute z-[10]">
             <p className="global-titleFont text-center sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
               All features
             </p>
@@ -112,24 +119,18 @@ function Features() {
               other will coming soon
             </p>
           </div>
-          <img
-            src="./features/txtbg.png"
-            alt="bg"
-            className=" absolute z-[2] w-[80vw]"
-          />
+        <div className="customShape absolute z-[2] w-[80vw] h-[20rem] bg-[#14121E]"></div>
+
         </div>
 
         {/* color bg img */}
-        <div className="absolute z-[1] w-full flex justify-center items-center">
-          <img
-            src="./features/colorBg3.png"
-            alt="bg"
-            className=" sm:hidden lg:block lg:w-[85vw] xl:w-[80vw] lg:h-[190vh] xl:h-[160vh] opacity-[4%]"
-          />
+        <div className="absolute z-[1] w-full h-fit flex justify-center items-center">
+     
+          <div className="sm:hidden lg:block w-[55rem] mt-[5rem] h-[56rem] blur-[100px] opacity-[4%] bg-[#EB5757]"></div>
         </div>
 
         {/* all features */}
-        <div className="relative z-[4] text-white sm:mt-[8rem] md:mt-[10rem] lg:mt-[11rem] xl:mt-[15rem] 2xl:mt-[15rem] flex justify-center items-center">
+        <div className="relative z-[10] text-white sm:mt-[8rem] md:mt-[10rem] lg:mt-[11rem] xl:mt-[15rem] 2xl:mt-[15rem] flex justify-center items-center">
           <div className=" h-fit gap-4 flex flex-wrap justify-center items-center sm:flex-row sm:w-[23rem] md:w-[43rem] lg:w-[53rem] xl:w-[73rem] 2xl:w-[73rem]">
             {features.map((data) => (
               <FeatureItem key={data.title} data={data} />

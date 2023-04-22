@@ -1,18 +1,17 @@
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+import logo from "../public/logo.png";
 
 function Footer() {
   return (
     <>
-      <div className="absolute z-[1] w-ful flex justify-center items-center">
-        <img
-          src="./footer/footer-bg-color-blur.png"
-          alt="bg"
-          className=" sm:opacity-[35%] md:opacity-[13%] lg:opacity-[5%] h-[50rem] sm:w-[210vw] md:w-[100vw] -mt-8 "
-        />
+      <div className="absolute z-[1] w-full flex justify-center items-center mt-[15vw]">
+        <div
+          className="sm:opacity-[35%] md:opacity-[13%] lg:opacity-[5%] blur-[100px] h-[15rem] sm:w-[20vw] md:w-[80vw] bg-[#575BC7]"
+        ></div>
       </div>
-      <div className="flex jsutify-center items-center gb-font mt-[25vw] absolute w-full z-[2] bg-global ">
-
+      <div className="flex jsutify-center items-center gb-font mt-[25vw] absolute w-full z-[2] bg-global">
         {/* main */}
         <div className="w-full px-[5vw]">
           <footer className="text-white body-font">
@@ -135,11 +134,7 @@ function Footer() {
                 <div className="ml-5">
                   <Link href="/">
                     <div className="flex gap-x-2 cursor-pointer">
-                      <img
-                        src="./logo.png"
-                        alt="logo"
-                        className="w-auto h-4 my-auto"
-                      />
+                      <Image src={logo} alt="logo" height={15} width={15} quality={50} className="w-auto h-4 my-auto"/>
                       <p>SkillSpring</p>
                     </div>
                   </Link>

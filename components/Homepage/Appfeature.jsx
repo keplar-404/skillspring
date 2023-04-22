@@ -1,5 +1,8 @@
 import React from "react";
-import Line from "../../public/line.svg";
+import Image from "next/image";
+import linepng from "../../public/line.png";
+import apppic from "../../public/appPic2.png";
+import arrow from "../../public/arrow.png";
 
 function Appfeature() {
   return (
@@ -19,22 +22,21 @@ function Appfeature() {
       <div className="h-fit w-full relative text-white global-subTitleFont text-center ">
         <div className="absolute w-full flex justify-center items-center z-[1]">
           {/* <Line className="h-auto w-[300vw]" /> */}
-          <img
-            src="./line.png"
+          <Image
+            src={linepng}
             alt="line"
+            width={800}
+            height={800}
+            quality={50}
             className="w-screen sm:h-auto md:h-96 lg:h-[34rem] xl:h-[44rem] 2xl:h-[54rem]"
           />
         </div>
 
         <div
-          className="w-full absolute z-[2] sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-y-6 md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 2xl:grid 2xl:grid-cols-3
-sm:text-base md:text-xs lg:text-sm xl:text-base 2xl:text-base
-sm:mt-10 md:mt-10 lg:mt-20 xl:mt-36 2xl:mt-36
-mt-36 px-[5vw]"
+          className="w-full absolute z-[2] sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-y-6 md:grid md:grid-cols-3 lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-3 2xl:grid 2xl:grid-cols-3 sm:text-base md:text-xs lg:text-sm xl:text-base 2xl:text-base sm:mt-10 md:mt-10 lg:mt-20 xl:mt-36 2xl:mt-36 mt-36 px-[5vw]"
         >
           <div className="flex flex-col justify-center items-center gap-y-24 sm:gap-y-6 md:gap-y-6 lg:gap-y-6">
             <p>
-              {" "}
               <span className="sm:visible md:hidden lg:hidden">1. </span> Track
               statistic of your learning curve
             </p>
@@ -49,7 +51,16 @@ mt-36 px-[5vw]"
           </div>
 
           <div className="sm:hidden md:flex lg:flex">
-            <img src="./appPic.png" alt="appPic" className="w-full" />
+            <Image
+              src={apppic}
+              alt="appPic"
+              width={800}
+              height={800}
+              className="w-full"
+              placeholder="blur"
+              loading="lazy"
+              quality={50}
+            />
           </div>
 
           <div className="flex flex-col justify-center items-center gap-y-12 sm:gap-y-6 md:gap-y-6 lg:gap-y-6">
@@ -77,7 +88,15 @@ mt-36 px-[5vw]"
           <button className="heroBtn-bg cursor-pointer hover:drop-shadow-[0px_0px_15px_#455fb4e1] global-titleFont text-[17px]">
             <div className="flex justify-center items-center gap-x-[17px]">
               <p>And many more</p>
-              <img src="./arrow.png" alt="arrow" className="h-[15px] w-auto " />
+              <Image
+                src={arrow}
+                alt="arrow"
+                width={1}
+                height={1}
+                className="h-[15px] w-auto"
+                loading="lazy"
+                quality={1}
+              />
             </div>
           </button>
         </div>

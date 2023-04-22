@@ -1,5 +1,7 @@
 import React from "react";
 import Teachers from "./Teachers";
+import Image from "next/image";
+import teachLine from "../../public/teacherLine.png";
 
 function Teachersection() {
   const teacherGrounp1 = [
@@ -62,26 +64,27 @@ function Teachersection() {
         {/* teacher section */}
         <div className="text-white global-subTitleFont overflow-hidden">
           {/* background line */}
-          <img
-            src="./teacherLine.png"
+          <Image
+            src={teachLine}
             alt="line"
-            className="w-screen h-auto sm:hidden lg:block absolute z-[1]"
+            height={1500}
+            width={1500}
+            className="w-[100vw] opacity-[50%] h-auto sm:hidden lg:block absolute z-[1]"
           />
-          <div className="absolute z-[2] w-full flex justify-center items-center sm:hidden md:flex">
-            {/* background blur */}
-            <img
-              src="./teacherBackgroundBlur.png"
-              alt="bg"
-              className="sm:hidden lg:block w-[826.28px] h-[48rem] opacity-[8%] -rotate-12 -mt-10"
-            />
-          </div>
+
           {/* teacher's */}
-          <div className="w-full overflow-x-hidden mt-20 absolute z-[3] global-subTitleFont">
+          <div className="w-full overflow-x-hidden flex flex-col justify-center items-center mt-20 absolute z-[3] global-subTitleFont">
             <div className="flex justify-center items-center gap-4 sm:flex-col lg:flex-row overflow-hidden ">
               {teacherGrounp1.map((data) => (
                 <Teachers data={data} key={data.img} />
               ))}
             </div>
+
+            {/* background blur */}
+            <div className="absolute z-[2] w-full flex justify-center items-center sm:hidden md:flex">
+              <div className="sm:hidden lg:block w-[40rem]  h-[20rem] opacity-[8%] -rotate-12 blur-[100px]  bg-[#00B2BF] rounded-full"></div>
+            </div>
+
             <div className="flex mt-4 justify-center items-center gap-4 sm:flex-col lg:flex-row overflow-hidden ">
               {teacherGrounp2.map((data) => (
                 <Teachers data={data} key={data.img} />

@@ -9,6 +9,8 @@ import Seven from "../public/team/7.svg";
 import Eight from "../public/team/8.svg";
 import Nine from "../public/team/9.svg";
 import Ten from "../public/team/10.svg";
+import Image from "next/image";
+import glass from "../public/teacherdivbg.png"
 
 function Company() {
   const features = [
@@ -80,11 +82,14 @@ function Company() {
     return (
       <>
         <div className="relative flex flex-col gap-y-[2rem] justify-center items-center w-[17rem] h-[20rem]">
-          <img
-            src="./features/glass.png"
-            alt="glass"
-            className="absolute w-[17rem] h-[17rem]"
-          />
+           <Image
+          src={glass}
+          alt="glass"
+          width={200}
+          height={200}
+          quality={50}
+          className="absolute w-[17rem] h-[17rem]"
+        />
           {svg}
           <div className="w-full px-10">
             <p className="global-titleFontBold text-center ">{title}</p>
@@ -118,11 +123,6 @@ function Company() {
               lobortis.
             </p>
           </div>
-          <img
-            src="./features/txtbg.png"
-            alt="bg"
-            className=" absolute z-[2] w-[80vw]"
-          />
         </div>
         {/* team title */}
         <p className="global-titleFont sm:mt-[10rem] md:mt-[15rem] xl:mt-[20rem] text-center sm:text-base md:text-xl lg:text-2xl xl:text-3xl 2xl:text-3xl">
