@@ -1,4 +1,5 @@
 import L from "../../public/L.svg";
+import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -33,17 +34,19 @@ function HeroSection() {
             </div>
 
             <div className="absolute w-full flex justify-center items-center">
-              <img
+              {/* <img
                 src="./appBg.png"
                 alt="dkl"
                 className="absolute mt-[49vw] opacity-[8%]"
-              />
+              /> */}
+              
 
-              <img
-                src="./appPic.png"
+              {/* <img
+               
                 alt="skillspring"
-                className="absolute  h-[50vw] w-[68vw] mt-[49vw]"
-              />
+              
+              /> */}
+              <Image  src="/appPic2.png" width={800} height={800}  className="absolute h-[50vw] w-[68vw] mt-[49vw]"/>
             </div>
           </div>
         </section>
