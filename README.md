@@ -2,8 +2,6 @@
 
 E-learning platform full website.
 
-![Project Screenshot](https://i.ibb.co/VHHPcxM/L2v-Wbgm-H0-D.png)
-
 ## Demo
 
 Check out the live demo [here](https://skillspring.vercel.app/).
