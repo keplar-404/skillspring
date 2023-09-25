@@ -2,7 +2,7 @@
 
 E-learning platform full website.
 
-![Project Screenshot](https://i.ibb.co/VHHPcxM/L2v-Wbgm-H0-D.png" alt="L2v-Wbgm-H0-D)
+![Project Screenshot](https://i.ibb.co/VHHPcxM/L2v-Wbgm-H0-D.png)
 
 ## Demo
 
