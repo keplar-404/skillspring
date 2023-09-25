@@ -1,5 +1,4 @@
-# React Kanban Board
-
+# Nextjs modern website
 E-learning platform full website.
 
 ## Demo
