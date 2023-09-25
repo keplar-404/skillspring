@@ -2,7 +2,7 @@
 
 E-learning platform full website.
 
-![Project Screenshot](https://i.ibb.co/X7Cb4x7/skillspring.png)
+![Project Screenshot](https://i.ibb.co/VHHPcxM/L2v-Wbgm-H0-D.png)
 
 ## Demo
 
